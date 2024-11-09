@@ -1,0 +1,260 @@
+.container_header{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.container_footer{
+    background-color: rgb(0, 204, 255);
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-content:center;
+    align-items: center;
+}
+
+.header{
+    background-color: rgb(150, 255, 255);
+    width: auto;
+    height: auto;
+}
+
+.material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 0, 
+    'wght' 400, 
+    'GRAD' 0, 
+    'opsz' 48;
+    color:#7700ff;
+}
+
+.name_shop {
+    font-family: "Cherry Cream Soda", system-ui;
+    font-style: normal;
+}
+
+.nombre_reseña{
+    font-size: 150%;
+}
+
+.menu{
+    width: auto;
+    display:grid;
+    justify-content: space-between;
+}
+
+.carousel-item{
+    text-align: center;
+}
+
+.producto{
+    background-color: rgb(0, 110, 255);
+    text-align: center;
+    margin: 10px;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.titulo_reseña{
+    text-align: center;
+    justify-items: center;
+    font-size: 300%;
+    padding-top: 10px;
+}
+
+.imag_reseña{
+    text-align: center;
+    margin: 10px;
+    max-width: 200px;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.reseña{
+    background-color: rgb(190, 218, 255);
+    max-width: 250px;
+    max-height: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.estrellitas{
+    color: #D4AF37;
+}
+
+.reseñas{
+    background-color: rgb(99, 180, 255);
+}
+
+.comentario_reseña{
+    text-align: center;
+    font-family: italic;
+}
+
+.contacto_medio{
+    background-color: rgb(119, 177, 137);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.contacto_mapa{
+    display: grid;
+    text-align: center;
+    font-size: 100%;
+    justify-items: center;
+}
+
+.form_name{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor_foot_form{
+    background-color: rgb(0, 100, 100);
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    justify-content:space-around;
+    text-align: center;
+    font-size: 100%;
+}
+
+/* Extra small devices (600px and down) */
+@media only screen and (max-width: 600px) {
+    #title{
+        margin: auto;
+        padding: auto;
+        height: 25px;
+        width: 115px;
+        font-size: 100%;
+    }
+
+    #icono{
+        margin: auto;
+        padding-top: 10px;
+        height: 25px;
+        width: 12px;
+        font-size: 75%;
+    }
+
+    .carousel-inner{
+        height: 20vh;
+    }
+
+    .contenedor{
+        background-color: rgb(150, 255, 255);
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    
+    .grid_reseñas{
+        display:grid;
+        grid-template-columns:auto;
+        grid-template-rows: auto;
+        justify-items: center;
+        padding: 50px;
+        padding-top: 0;
+    }
+}   
+    /* Small devices (600px and up) */   
+@media only screen and (min-width: 600px) {  
+    #title{
+        margin: auto;
+        padding: auto;
+        height: 50px;
+        width: 230px;
+        font-size: 200%;
+    }
+
+    #icono{
+        margin: auto;
+        padding-top: 20px;
+        height: 50px;
+        width: 25px;
+        font-size: 150%;
+    }
+
+    .carousel-inner{
+        height: 38vh;
+    }
+
+    .contenedor{
+        background-color: rgb(150, 255, 255);
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+    
+    .mapa{
+        margin: auto;
+        padding: auto;
+        height: auto;
+        min-width: 50px;
+        width:auto;
+    }
+
+    .grid_reseñas{
+        display:grid;
+        grid-template-columns:auto auto;
+        grid-template-rows: auto;
+        justify-items: center;
+        padding: 50px;
+        padding-top: 0;
+    }
+}  
+    /* Medium devices (768px and up) */   
+@media only screen and (min-width: 880px) {   
+    #title{
+        margin: auto;
+        padding: auto;
+        height: 100px;
+        width: 460px;
+        font-size: 400%;
+    }
+
+    #icono{
+        margin: auto;
+        padding-top: 40px;
+        height: 100px;
+        width: 50px;
+        font-size: 300%;
+    }
+
+    .contenedor{
+        background-color: rgb(150, 255, 255);
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+    } 
+
+    .mapa{
+        margin: auto;
+        padding: auto;
+        height: 300px;
+        min-width: 600px;
+        width:auto;
+    }
+
+    .grid_reseñas{
+        display:grid;
+        grid-template-columns:auto auto auto;
+        grid-template-rows: auto;
+        justify-items: center;
+        padding: 50px;
+        padding-top: 0;
+    }
+}
