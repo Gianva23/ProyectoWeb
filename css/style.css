@@ -48,12 +48,21 @@
 }
 
 .producto{
-    background-color: rgb(0, 110, 255);
+    background-color: rgb(0, 21, 49);
     text-align: center;
     margin: 10px;
     max-width: 300px;
     padding: 15px;
     border-radius: 10px;
+}
+
+.detalle{
+    background-color: rgb(105, 220, 255);
+    text-align: center;
+    margin: 10px;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 30px;
 }
 
 .titulo_reseña{
