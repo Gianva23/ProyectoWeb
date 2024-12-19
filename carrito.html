@@ -23,7 +23,35 @@
         </header>
 
         <main>
-            <h1>ACA ES EL CARRITO</h1>
+            <div class = "tablita">
+                <table >
+                    <thead>
+                        <tr>
+                            <th scope="col">Items</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Costo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ItemsCompra">
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td></td>
+                            <td></td>
+                            <td id="sumatotal"></td>
+                        </tr>
+                    </tfoot>
+                </table>    
+            </div>
+
+            <div class="botoncitos_carrito">
+                <button id="limpiar-carrito">Borrar todo y volver al inicio</button>
+                <button id="finalizar-compra" class="btn btn-success">Finalizar Compra</button>
+            </div>
+
         </main>
         
         <footer>
@@ -45,5 +73,11 @@
                 </div>
             </div>
         </footer>
+
+        <script src="js/carrito.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
     </body>
 </html>

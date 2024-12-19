@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () =>
           productos.forEach((product) => 
             {
             const cardDiv = document.createElement("div");
-            cardDiv.className = "col-md-15"; // es una clase de bootstrap modificar 5-20
+            cardDiv.className = "col-md-15";
             cardDiv.innerHTML = `
               <div class="producto">
                 <img src="${product.thumbnail}" class="img" alt="${product.title}" width="250">
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () =>
       let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
       carrito.push(product);      
       localStorage.setItem("carrito", JSON.stringify(carrito));
-      swal(`¡Se agrego ${product.title} al carrito!`)
+      swal(`¡Se agrego ${product.title} al carrito!`);
     }
     fetchProductos();
   });
