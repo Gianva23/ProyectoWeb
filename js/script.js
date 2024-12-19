@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () =>
   
     function fetchProductos() 
     {
-      fetch("https://dummyjson.com/products?limit=15")
+      fetch("https://dummyjson.com/products?limit=12")
         .then((response) => response.json())
         .then((data) => {
           const productos = data.products;
@@ -25,30 +25,24 @@ document.addEventListener("DOMContentLoaded", () =>
                 </div>
               </div>
             `;
-            // Agregar evento al botón "Agregar"
             const botonAgregar = cardDiv.querySelector("button");
             botonAgregar.addEventListener("click", () => 
               {
-              agregarAlCartito(product);
+              agregarproducto(product);
             });
-  
-            // Añadir la card al contenedor
+
             container.appendChild(cardDiv);
           });
         })
-        .catch((error) => console.error("Error", error));
+        .catch((error) => console.error("Error al cargar la api", error));
     }
-  
-    // Función para agregar al carrito usando localStorage
-    function agregarAlCartito(product) 
+
+    function agregarproducto(product) 
     {
-      let cart = JSON.parse(localStorage.getItem("cart")) || [];
-      //agregar otro producto o el primero
-      cart.push(product);      
-      localStorage.setItem("cart", JSON.stringify(cart));
-      alert(`${product.title} ha sido agregado al carrito!`);
+      let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+      carrito.push(product);      
+      localStorage.setItem("carrito", JSON.stringify(carrito));
+      swal(`¡Se agrego ${product.title} al carrito!`)
     }
-  
-    // Carga inicial de productos
     fetchProductos();
   });

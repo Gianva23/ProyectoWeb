@@ -52,6 +52,7 @@
     text-align: center;
     margin: 10px;
     max-width: 300px;
+    min-height: 480px;
     padding: 15px;
     border-radius: 10px;
 }
