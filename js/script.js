@@ -143,7 +143,6 @@ function borro(id) {
   carrito = carrito.filter((item) => item.id !== id);
   localStorage.setItem("carrito", JSON.stringify(carrito));
   actualizarCarrito();
-  actualizarCarrito();
 }
 
 //sumo 1 cantidad a producto
